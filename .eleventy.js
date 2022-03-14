@@ -48,7 +48,6 @@ module.exports = (eleventyConfig, options) => {
         const fileIgnorePattern = path.join(templateDir, `**/*.{${ extensionsRegex }}`);
 
         const filesToCopy = glob.sync(fileSearchPattern, { nodir: true, ignore: fileIgnorePattern });
-        console.log(filesToCopy)
         if (opts.verbose) {
             console.info(`# copy-local-assets - input: ${template.inputPath}, output: ${outputPath}, with ${filesToCopy.length} asset${filesToCopy.length!==1?'s':''} matching "${assetsNameMatch}"`);
         }
