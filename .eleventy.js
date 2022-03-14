@@ -33,14 +33,14 @@ module.exports = (eleventyConfig, options) => {
         const assetsNameMatch = (typeof template.dataCache.copyLocalAssets === 'string') ? template.dataCache.copyLocalAssets : '*';
 
         const extensionsRegex = template._config.templateFormats.join(",");
-        const mdSearchPattern = path.join(templateDir, `**\\*.{${ extensionsRegex }}`);
-        const mdIgnorePattern = path.join(templateDir, `**\\_index.{${ extensionsRegex }}`);
+        const mdSearchPattern = path.join(templateDir, `**/*.{${ extensionsRegex }}`);
+        const mdIgnorePattern = path.join(templateDir, `**/_index.{${ extensionsRegex }}`);
 
         const entries = glob.sync(mdSearchPattern, { nodir: true, ignore: mdIgnorePattern });
         // only 1 page template allowed when copying assets
         if (entries.length > 1) {
             console.info(`Skipping copying over files from: ${templateDir} as multiple templates found in directory!`);
-            return;
+            return content;
         }
 
         // copy all hierarchically, except templates
@@ -48,7 +48,7 @@ module.exports = (eleventyConfig, options) => {
         const fileIgnorePattern = path.join(templateDir, `**/*.{${ extensionsRegex }}`);
 
         const filesToCopy = glob.sync(fileSearchPattern, { nodir: true, ignore: fileIgnorePattern });
-
+        console.log(filesToCopy)
         if (opts.verbose) {
             console.info(`# copy-local-assets - input: ${template.inputPath}, output: ${outputPath}, with ${filesToCopy.length} asset${filesToCopy.length!==1?'s':''} matching "${assetsNameMatch}"`);
         }
