@@ -31,7 +31,7 @@ Then, include it in your `.eleventy.js` config file:
 const copyLocalAssets = require("eleventy-plugin-copy-local-assets");
 
 module.exports = (eleventyConfig) => {
-    eleventyConfig.addPlugin(copyLocalAssets, { verbose: false });
+	eleventyConfig.addPlugin(copyLocalAssets, { verbose: false });
 };
 ```
 
@@ -65,6 +65,10 @@ When the `verbose` option is set to `true`, the console will log each file it fi
 
 ## Credits
 
-- **99.9% of the work was done by [Balazs HIDEGHETY](https://github.com/hidegh) based upon [this wonderful comment](https://github.com/11ty/eleventy/issues/379#issuecomment-779705668) — my only contribution is to turn it into a plugin and add a frontmatter flag check.**
+-   **99.9% of the work was done by [Balazs HIDEGHETY](https://github.com/hidegh) based upon [this wonderful comment](https://github.com/11ty/eleventy/issues/379#issuecomment-779705668) — my only contribution is to turn it into a plugin and add a frontmatter flag check.**
 
-- [Eleventy Plugin Template](https://github.com/5t3ph/eleventy-plugin-template) by [Stephanie Eckles](https://github.com/5t3ph) made my life a bit easier!
+-   [Eleventy Plugin Template](https://github.com/5t3ph/eleventy-plugin-template) by [Stephanie Eckles](https://github.com/5t3ph) made my life a bit easier!
+
+## Contributors
+
+-   [Austen Lamacraft ](https://github.com/AustenLamacraft)

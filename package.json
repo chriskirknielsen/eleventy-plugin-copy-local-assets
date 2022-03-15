@@ -1,39 +1,45 @@
 {
-    "name": "eleventy-plugin-copy-local-assets",
-    "version": "1.0.0",
-    "description": "Set up a dynamic passthrough copy in Eleventy for a folder holding both the content file and the assets used on the page.",
-    "homepage": "",
-    "main": ".eleventy.js",
-    "scripts": {
-        "start": "eleventy --serve",
-        "build": "eleventy",
-        "bump": "npm --no-git-tag-version version"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/chriskirknielsen/eleventy-plugin-copy-local-assets.git"
-    },
-    "keywords": [
-        "11ty",
-        "11ty-plugin",
-        "eleventy",
-        "eleventy-plugin",
-        "passthrough"
-    ],
-    "author": {
-        "name": "chriskirknielsen",
-        "url": "https://chriskirknielsen.com"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/chriskirknielsen/eleventy-plugin-copy-local-assets/issues"
-    },
-    "dependencies": {
-        "fs": "0.0.1-security",
-        "glob": "^7.1.7",
-        "path": "^0.12.7"
-    },
-    "devDependencies": {
-        "@11ty/eleventy": "^0.11.1"
-    }
+	"name": "eleventy-plugin-copy-local-assets",
+	"version": "1.0.1",
+	"description": "Set up a dynamic passthrough copy in Eleventy for a folder holding both the content file and the assets used on the page.",
+	"homepage": "",
+	"main": ".eleventy.js",
+	"scripts": {
+		"start": "eleventy --serve",
+		"build": "eleventy",
+		"bump": "npm --no-git-tag-version version"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chriskirknielsen/eleventy-plugin-copy-local-assets.git"
+	},
+	"keywords": [
+		"11ty",
+		"11ty-plugin",
+		"eleventy",
+		"eleventy-plugin",
+		"passthrough"
+	],
+	"author": {
+		"name": "chriskirknielsen",
+		"url": "https://chriskirknielsen.com"
+	},
+	"contributors": [
+		{
+			"name": "AustenLamacraft",
+			"url": "https://github.com/AustenLamacraft"
+		}
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/chriskirknielsen/eleventy-plugin-copy-local-assets/issues"
+	},
+	"dependencies": {
+		"fs": "0.0.1-security",
+		"glob": "^7.1.7",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.1"
+	}
 }
